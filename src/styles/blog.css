@@ -1,0 +1,24 @@
+.blog-container {
+    padding: 20px;
+}
+
+.post {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.post h2 {
+    font-size: 24px;
+}
+
+.post p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.post span {
+    display: block;
+    margin-top: 10px;
+    color: #999;
+}

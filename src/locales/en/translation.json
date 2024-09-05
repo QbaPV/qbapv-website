@@ -1,0 +1,23 @@
+{
+  "contact": "Contact",
+	"name": "Name",
+	"email": "Email",
+	"message": "Message",    
+    "submit": "Submit",
+	
+  "projects": "Projects",
+	"project_1": "Project 1",    
+    "project_2": "Project 2",
+	"project_1_description": "Brief description of Project 1.",
+    "project_2_description": "Brief description of Project 2.",
+    "more_information": "More Information",	
+
+  "about": "About Us",
+	"about_description": "Company information.",
+	
+  "blog": "Blog",
+	
+  "home": "Home",
+	"welcome": "Welcome to QBAPV",
+	"home_description": "This is the beginning of our interactive and economic expansion project."
+ }

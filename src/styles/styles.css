@@ -7,8 +7,38 @@ body {
 
 h1 {
     color: #333;
+    text-align: center;
+    margin-top: 50px;
 }
 
 p {
-    color: #555;
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+    line-height: 1.6;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
 }

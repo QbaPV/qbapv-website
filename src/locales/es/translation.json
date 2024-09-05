@@ -1,0 +1,23 @@
+{
+  "contact": "Contacto",
+	"name": "Nombre",
+	"email": "Correo electrónico",
+	"message": "Mensaje",    
+    "submit": "Enviar",
+	
+  "projects": "Proyectos",
+	"project_1": "Proyecto 1",    
+    "project_2": "Proyecto 2",
+	"project_1_description": "Descripción breve del Proyecto 1.",
+    "project_2_description": "Descripción breve del Proyecto 2.",
+    "more_information": "Más información",	
+
+  "about": "Sobre Nosotros",
+	"about_description": "Información sobre la empresa.",
+	
+  "blog": "Blog",	
+	
+  "home": "Inicio",
+	"welcome": "Bienvenido a QbaPV",
+	"home_description": "Este es el inicio de nuestro proyecto interactivo y de expansión económica."
+ }

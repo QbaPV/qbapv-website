@@ -1,0 +1,18 @@
+.register-container {
+    padding: 20px;
+    border: 1px solid black; /* Añade un borde temporal para ver si el contenedor está visible */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+}
+
+button {
+    padding: 10px 20px;
+}
