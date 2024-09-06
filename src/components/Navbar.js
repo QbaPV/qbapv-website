@@ -10,12 +10,12 @@ const Navbar = () => {
   return (
     <nav>
       <ul>
-        <li><Link to="/">{t('home')}</Link></li>
+		<li><Link to="/">{t('home')}</Link></li>
         <li><Link to="/about">{t('about')}</Link></li>
         <li><Link to="/projects">{t('projects')}</Link></li>
-        <li><Link to="/contact">{t('contact')}</Link></li>
-		<li><Link to="/blog">{t('blog')}</Link></li>
-        <li><Link to="/register">{t('register')}</Link></li> {/* Enlace para el registro */}
+        <li><Link to="/contact">{t('contact')}</Link></li>	
+		<li><Link to="/blog">{t('blog')}</Link></li>    {/* */}
+        <li><Link to="/register">{t('register')}</Link></li>
       </ul>
       <LanguageSelector />
     </nav>

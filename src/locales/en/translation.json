@@ -1,10 +1,13 @@
 {
-  "contact": "Contact",
-	"name": "Name",
-	"email": "Email",
-	"message": "Message",    
-    "submit": "Submit",
-	
+  "home": "Home",
+	"welcome": "Welcome to QBAPV",
+	"home_description": "This is the beginning of our interactive and economic expansion project.",
+
+
+  "about": "About Us",
+	"about_description": "Company information.",
+
+
   "projects": "Projects",
 	"project_1": "Project 1",    
     "project_2": "Project 2",
@@ -12,12 +15,21 @@
     "project_2_description": "Brief description of Project 2.",
     "more_information": "More Information",	
 
-  "about": "About Us",
-	"about_description": "Company information.",
 	
+  "contact": "Contact",
+	"name": "Name",
+	"email": "Email",
+	"message": "Message",    
+    "submit": "Submit",
+	
+
   "blog": "Blog",
-	
-  "home": "Home",
-	"welcome": "Welcome to QBAPV",
-	"home_description": "This is the beginning of our interactive and economic expansion project."
+	"blog_title0001": "Title of the first Blog",
+ 
+ 
+  "register_page": "Register Page",
+    "username": "Username",
+	"password": "Password",
+    "register": "Register"
+  
  }
