@@ -1,11 +1,12 @@
 {
   "home": "Inicio",
 	"welcome": "Bienvenido a QbaPV",
-	"home_description": "Este es el inicio de nuestro proyecto interactivo y de expansión económica.",
+	"home_description": "Explorando ideas innovadoras y proyectos de expansión económica.",
+	"button_explore_project": "Explora nuestros proyectos",
 
 
   "about": "Sobre Nosotros",
-	"about_description": "Información sobre la empresa.",
+	"about_description": "información sobre la empresa.",
 
 
   "projects": "Proyectos",
