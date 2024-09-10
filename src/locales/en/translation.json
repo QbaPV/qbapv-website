@@ -16,11 +16,20 @@
 
 
   "projects": "Projects",
-	"project_1": "Project 1",    
-    "project_2": "Project 2",
-	"project_1_description": "Brief description of Project 1.",
-    "project_2_description": "Brief description of Project 2.",
-    "more_information": "More Information",	
+	"project_1": "Forex",
+	"project_2": "Cryptocurrencies",
+	"project_3": "Free Bitcoins",
+	"more_information": "More Information",	
+	"featured_projects": "Featured Projects",
+	"featured_projects_1": "Choose the one that fits your wallet best",
+	"featured_projects_2": "We have options for all types of budgets", 
+	"project_1_title": "Working with our signal on MQL5",
+	"project_1_description": "Follow our signal and achieve high percentage gains. Requires a medium to large investment.",
+	"project_2_title": "Working with 3Commas and TradingView",
+	"project_2_description": "Follow our Bots or design your own and share your ideas. Requires a small to medium investment.",
+	"project_3_title": "Freebitcoin Platform",
+	"project_3_description": "Follow our strategies or design your own. Requires zero, very little, or whatever you want to invest.",
+	"button_learn_more": "Learn more",
 
 	
   "contact": "Contact",
