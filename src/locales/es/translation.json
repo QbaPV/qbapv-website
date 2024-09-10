@@ -1,12 +1,18 @@
 {
   "home": "Inicio",
 	"welcome": "Bienvenido a QbaPV",
-	"home_description": "Explorando ideas innovadoras y proyectos de expansión económica.",
+	"home_description_01": "Tu lugar favorito para reunirnos",
+	"home_description_02": "Desarrollar ideas innovadoras y",
+	"home_description_03": "Proyectos de expansión económica.",
+	"home_description_04": "QbaPV puede ayudarte a encontrar los mejores nichos de negocios no importa tu capital.",
+	"home_description_05": "¡Simplemente únete y sigue cada una de nuestras ideas y proyectos!",
+	"home_description_06": "¡Hazlos tuyos y comienza a personalizarlos! Ah, y debes saber que todo esto es,",
+	"home_description_07": "¡Sin nigún tipo de compromiso!",
 	"button_explore_project": "Explora nuestros proyectos",
 
 
   "about": "Sobre Nosotros",
-	"about_description": "información sobre la empresa.",
+	"about_description": "informaci贸n sobre la empresa.",
 
 
   "projects": "Proyectos",
@@ -14,7 +20,7 @@
     "project_2": "Proyecto 2",
 	"project_1_description": "Descripción breve del Proyecto 1.",
     "project_2_description": "Descripción breve del Proyecto 2.",
-    "more_information": "Más información",	
+    "more_information": "Más informaci贸ón",	
 
 
   "contact": "Contacto",
@@ -32,5 +38,6 @@
     "username": "Usuario",
 	"password": "Contraseña",
     "register": "Registro"
+	
 	
  }

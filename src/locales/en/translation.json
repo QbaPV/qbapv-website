@@ -1,7 +1,13 @@
 {
   "home": "Home",
-	"welcome": "Welcome to QBAPV",
-	"home_description": "Exploring innovative ideas and economic expansion projects.",
+	"welcome": "Welcome to QbaPV",
+	"home_description_01": "Your favorite place to meet up",
+	"home_description_02": "Develop innovative ideas and",
+	"home_description_03": "Economic expansion projects.",
+	"home_description_04": "QbaPV can help you find the best business niches, no matter your capital.",
+	"home_description_05": "Simply join and follow each of our ideas and projects!",
+	"home_description_06": "Make them yours and start personalizing them! Oh, and you should know that all of this is",
+	"home_description_07": "Without any kind of commitment!",
 	"button_explore_project": "Explore our projects",
 
 
