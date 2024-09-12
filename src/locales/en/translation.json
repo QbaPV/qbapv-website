@@ -9,6 +9,15 @@
 	"home_description_06": "Make them yours and start personalizing them! Oh, and you should know that all of this is",
 	"home_description_07": "Without any kind of commitment!",
 	"button_explore_project": "Explore our projects",
+	
+	"testimonials_title": "What Our Clients Say",
+	"person_1_name": "John Doe",
+	"person_1_testimonial": "This platform has been a game-changer for me.",
+	"person_2_name": "Jane Smith",
+	"person_2_testimonial": "I love how easy it is to navigate and invest!",
+	"person_3_name": "Alex Johnson",
+	"person_3_testimonial": "The projects are truly innovative and impactful.",
+	
 
 
   "about": "About Us",
@@ -46,6 +55,16 @@
   "register_page": "Register Page",
     "username": "Username",
 	"password": "Password",
-    "register": "Register"
+    "register": "Register",
+	
+	
+  "footer_about": "About Us",
+	"footer_description": "We are committed to bringing you the best opportunities to grow and invest.",
+	"footer_links": "Quick Links",
+	"footer_about_link": "About Us",
+	"footer_projects_link": "Projects",
+	"footer_contact_link": "Contact",
+	"footer_follow_us": "Follow Us",
+	"footer_copyright": "© 2024 QbaPV. All rights reserved."
   
  }

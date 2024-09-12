@@ -10,6 +10,15 @@
     "home_description_07": "¡Sin nigún tipo de compromiso!",
     "button_explore_project": "Explora nuestros proyectos",
 
+	"testimonials_title": "Lo Que Dicen Nuestros Clientes",
+	"person_1_name": "John Doe",
+	"person_1_testimonial": "Esta plataforma ha sido un punto de inflexión para mí.",
+	"person_2_name": "Jane Smith",
+	"person_2_testimonial": "¡Me encanta lo fácil que es navegar e invertir!",
+	"person_3_name": "Alex Johnson",
+	"person_3_testimonial": "Los proyectos son verdaderamente innovadores e impactantes.",
+
+
 
   "about": "Sobre Nosotros",
   	"about_description": "informaci贸n sobre la empresa.",
@@ -45,7 +54,16 @@
   "register_page": "Página de Registro",
     "username": "Usuario",
 	"password": "Contraseña",
-    "register": "Registro"
+    "register": "Registro",
 	
+	
+  "footer_about": "Acerca de nosotros",
+	"footer_description": "Nos comprometemos a brindarle las mejores oportunidades para crecer e invertir.",
+	"footer_links": "Enlaces rápidos",
+	"footer_about_link": "Acerca de nosotros",
+	"footer_projects_link": "Proyectos",
+	"footer_contact_link": "Contacto",
+	"footer_follow_us": "Síganos",
+	"footer_copyright": "© 2024 QbaPV. Todos los derechos reservados."
 	
  }
