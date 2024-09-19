@@ -1,27 +1,60 @@
 {
   "home": "Inicio",
+
     "welcome": "Bienvenido a QbaPV",
-    "home_description_01": "Tu lugar favorito para reunirnos",
-    "home_description_02": "Desarrollar ideas innovadoras y",
-    "home_description_03": "Proyectos de expansión económica.",
-    "home_description_04": "QbaPV puede ayudarte a encontrar los mejores nichos de negocios no importa tu capital.",
-    "home_description_05": "¡Simplemente únete y sigue cada una de nuestras ideas y proyectos!",
-    "home_description_06": "¡Hazlos tuyos y comienza a personalizarlos! Ah, y debes saber que todo esto es,",
-    "home_description_07": "¡Sin nigún tipo de compromiso!",
-    "button_explore_project": "Explora nuestros proyectos",
+      "home_description_01": "Tu lugar favorito para reunirnos",
+      "home_description_02": "Desarrollar ideas innovadoras y",
+      "home_description_03": "Proyectos de expansión económica.",
+      "home_description_04": "QbaPV puede ayudarte a encontrar los mejores nichos de negocios no importa tu capital.",
+      "home_description_05": "¡Simplemente únete y sigue cada una de nuestras ideas y proyectos!",
+      "home_description_06": "¡Hazlos tuyos y comienza a personalizarlos! Ah, y debes saber que todo esto es,",
+      "home_description_07": "¡Sin nigún tipo de compromiso!",
+      "button_explore_project": "Explora nuestros proyectos",
 
-	"testimonials_title": "Lo Que Dicen Nuestros Clientes",
-	"person_1_name": "John Doe",
-	"person_1_testimonial": "Esta plataforma ha sido un punto de inflexión para mí.",
-	"person_2_name": "Jane Smith",
-	"person_2_testimonial": "¡Me encanta lo fácil que es navegar e invertir!",
-	"person_3_name": "Alex Johnson",
-	"person_3_testimonial": "Los proyectos son verdaderamente innovadores e impactantes.",
+    "testimonials_title": "Lo Que Dicen Nuestros Clientes",
+      "person_1_name": "John Doe",
+      "person_1_testimonial": "Esta plataforma ha sido un punto de inflexión para mí.",
+      "person_2_name": "Jane Smith",
+      "person_2_testimonial": "¡Me encanta lo fácil que es navegar e invertir!",
+      "person_3_name": "Alex Johnson",
+      "person_3_testimonial": "Los proyectos son verdaderamente innovadores e impactantes.",
 
 
 
-  "about": "Sobre Nosotros",
-  	"about_description": "informaci贸n sobre la empresa.",
+  "about": "Acerca de nosotros",
+
+    "about_overview_title": "Quiénes somos",
+      "about_overview_description": "Somos una empresa especializada en identificar en qué proyectos o negocios es rentable invertir.",
+      "about_overview_description_01": "Analizamos cada detalle del proyecto o negocio e invertimos en el, aunque el negocio en sí no lleve mucho tiempo en el mercado, pero observando patrones que, con base en nuestra experiencia, nos indiquen que la inversión es factible.",
+      "about_overview_description_02": "Este riesgo es totalmente nuestro y nunca te ofreceremos un proyecto o idea de negocio que no hayamos validado como buena, segura y rentable.",
+      "about_overview_description_03": "La investigación es nuestra, la decisión de avanzar o no es tuya. Recuerda siempre nuestro lema:",
+      "about_overview_description_04": "¡Sin Compromisos!",
+
+    "about_mission_title": "Nuestra Misión",
+      "about_mission_description_05": "Nuestra misión es encontrar cualquier nicho dentro del vasto ecosistema del mercado online, traerlo hasta ti y desarrollarlo juntos.",
+      "about_mission_description_06": "Aseguramos tu éxito estudiándolo, analizándolo y explotándolo nosotros mismos, para que luego puedas verlo con mayor claridad.",
+      "about_mission_description_07": "Nuestra actividad principal siempre será ayudarte a hacer crecer tu portafolio de manera segura y confiable.",
+      "about_mission_description_08": "Nos mueve la idea de que, con nuestra experiencia y conocimientos, podemos ayudar a nuestros socios a tener éxito en un mundo económico cada vez más digital y competitivo.",
+      "about_mission_description_09": "El resultado final no está atado a un marco temporal específico, ya que puede variar para cada persona en función de los objetivos que se proponga.",
+
+    "about_vision_title": "Visión de la Empresa",
+      "about_vision_description_10": "Queremos ser la referencia en oportunidades de inversión seguras y rentables, ofreciendo claridad y confianza para que cualquier inversionista pueda tomar decisiones informadas y sin compromisos.",
+      "about_vision_description_11": "Buscamos inspirar a nuestros clientes a actuar, eliminando el miedo al riesgo a través de un análisis riguroso y ofreciendo confianza para alcanzar el éxito en un mercado competitivo.",
+      "about_vision_description_12": "Nos esforzamos por ser líderes en investigación e inversión en mercados emergentes, impulsando a nuestros socios a superar sus metas y explorar nuevas fronteras financieras.",
+      "about_vision_description_13": "Siempre seremos fieles a nuestros valores de integridad y compromiso, ofreciendo un equilibrio entre la seguridad financiera y la toma de decisiones calculadas para el crecimiento constante de nuestros clientes.",
+
+	  "about_values_title": "Nuestros Valores",
+      "about_values_description_14": "Fomentamos un entorno donde el trabajo tiene un propósito claro, impulsando el crecimiento financiero de nuestros clientes y brindando soluciones que realmente hagan la diferencia en sus vidas.",
+      "about_values_description_15": "Todas nuestras decisiones y acciones están enmarcadas dentro de sólidos principios éticos, asegurando la transparencia y honestidad en cada inversión que proponemos.",
+      "about_values_description_16": "Promovemos un cambio de actitud que genere confianza y coraje para actuar, ayudando a nuestros socios a superar sus miedos y tomar decisiones estratégicas con confianza.",
+      "about_values_description_17": "Creemos en la importancia de la cohesión entre nuestro equipo y nuestros clientes, trabajando juntos como una unidad sólida hacia un objetivo común, siempre inspirados en hacer lo correcto para lograr el éxito compartido.",
+
+    "about_team_title": "Nuestro Equipo",
+      "about_team_description_18": "Nuestro equipo está formado por personas comprometidas con la búsqueda de oportunidades de inversión seguras y rentables, aprovechando su experiencia para ofrecer las mejores soluciones a nuestros clientes.",
+      "about_team_description_19": "Cada miembro del equipo comparte sólidos principios éticos y aporta una perspectiva única, lo que nos permite encontrar soluciones innovadoras adaptadas a cada necesidad.",
+  	  "about_team_description_20": "Fomentamos un ambiente de trabajo colaborativo, siempre centrado en el éxito compartido y la satisfacción del cliente.",
+  	  "about_team_description_21": "Nuestro equipo es clave para el éxito de cada inversión, ya que combina un análisis preciso y una mentalidad emprendedora para ofrecer oportunidades seguras en un mercado dinámico.",
+
 
 
   "projects": "Proyectos",
@@ -60,10 +93,14 @@
   "footer_about": "Acerca de nosotros",
 	"footer_description": "Nos comprometemos a brindarle las mejores oportunidades para crecer e invertir.",
 	"footer_links": "Enlaces rápidos",
+  "footer_home_link": "Inicio",
 	"footer_about_link": "Acerca de nosotros",
 	"footer_projects_link": "Proyectos",
 	"footer_contact_link": "Contacto",
 	"footer_follow_us": "Síganos",
-	"footer_copyright": "© 2024 QbaPV. Todos los derechos reservados."
+  "footer_privacy": "Política de Privacidad",
+  "footer_terms": "Términos y Condiciones",
+  "footer_cookies": "Política de Cookies",
+ 	"footer_copyright": " QbaPV. Todos los derechos reservados."
 	
  }

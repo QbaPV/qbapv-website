@@ -1,27 +1,57 @@
 {
   "home": "Home",
+
 	"welcome": "Welcome to QbaPV",
-	"home_description_01": "Your favorite place to meet up",
-	"home_description_02": "Develop innovative ideas and",
-	"home_description_03": "Economic expansion projects.",
-	"home_description_04": "QbaPV can help you find the best business niches, no matter your capital.",
-	"home_description_05": "Simply join and follow each of our ideas and projects!",
-	"home_description_06": "Make them yours and start personalizing them! Oh, and you should know that all of this is",
-	"home_description_07": "Without any kind of commitment!",
-	"button_explore_project": "Explore our projects",
+		"home_description_01": "Your favorite place to meet up",
+		"home_description_02": "Develop innovative ideas and",
+		"home_description_03": "Economic expansion projects.",
+		"home_description_04": "QbaPV can help you find the best business niches, no matter your capital.",
+		"home_description_05": "Simply join and follow each of our ideas and projects!",
+		"home_description_06": "Make them yours and start personalizing them! Oh, and you should know that all of this is",
+		"home_description_07": "Without any kind of commitment!",
+		"button_explore_project": "Explore our projects",
 	
 	"testimonials_title": "What Our Clients Say",
-	"person_1_name": "John Doe",
-	"person_1_testimonial": "This platform has been a game-changer for me.",
-	"person_2_name": "Jane Smith",
-	"person_2_testimonial": "I love how easy it is to navigate and invest!",
-	"person_3_name": "Alex Johnson",
-	"person_3_testimonial": "The projects are truly innovative and impactful.",
+		"person_1_name": "John Doe",
+		"person_1_testimonial": "This platform has been a game-changer for me.",
+		"person_2_name": "Jane Smith",
+		"person_2_testimonial": "I love how easy it is to navigate and invest!",
+		"person_3_name": "Alex Johnson",
+		"person_3_testimonial": "The projects are truly innovative and impactful.",
 	
 
-
   "about": "About Us",
-	"about_description": "Company information.",
+
+	"about_overview_title": "Who We Are",
+		"about_overview_description": "We are a company that specializes in identifying which projects or businesses are profitable to invest in.",
+		"about_overview_description_01": "We analyze every detail of the project or business and invest in it, even if the business itself hasn’t been in the market for long, but by observing patterns that, based on our experience, indicate that the investment is feasible.",
+		"about_overview_description_02": "This risk is entirely ours, and we will never offer you a project or business idea that we haven't validated as good, safe, and profitable.",
+		"about_overview_description_03": "The research is on us, the decision to move forward or not is yours. Always remember our motto:",
+		"about_overview_description_04": "Without any kind of commitment!",
+
+	"about_mission_title": "Our Mission",
+		"about_mission_description_05": "Our mission is to find any niche within the vast online market ecosystem, bring it to you, and develop it together.",
+		"about_mission_description_06": "We ensure your success by first studying, analyzing, and operating it ourselves, so that you can later see it with greater clarity.",
+		"about_mission_description_07": "Our core activity will always be to help you grow your portfolio in a safe and reliable manner.",
+		"about_mission_description_08": "The final result isn't tied to a specific timeframe, as it may vary for each person depending on the goals they set for themselves.",
+
+	"about_vision_title": "Company Vision",
+		"about_vision_description_10": "We want to be the reference in safe and profitable investment opportunities, offering clarity and confidence so that any investor can make informed decisions without compromise.",
+		"about_vision_description_11": "We seek to inspire our clients to act, eliminating the fear of risk through rigorous analysis and offering confidence to achieve success in a competitive market.",
+		"about_vision_description_12": "We strive to lead in research and investment in emerging markets, driving our partners to exceed their goals and explore new financial frontiers.",
+		"about_vision_description_13": "We will always be faithful to our values ​​of integrity and commitment, offering a balance between financial security and making calculated decisions for the constant growth of our clients.",
+
+    "about_values_title": "Our Values",
+		"about_values_description_14": "We foster an environment where work has a clear purpose, driving the financial growth of our clients and providing solutions that truly make a difference in their lives.",
+		"about_values_description_15": "All our decisions and actions are framed within strong ethical principles, ensuring transparency and honesty in every investment we propose.",
+		"about_values_description_16": "We promote a change in attitude that builds trust and the courage to act, helping our partners overcome their fears and make strategic decisions with confidence.",
+		"about_values_description_17": "We believe in the importance of cohesion between our team and our clients, working together as a solid unit towards a common goal, always inspired to do what is right to achieve shared success.",
+
+    "about_team_title": "Our Team",
+		"about_team_description_18": "Our team is made up of individuals committed to finding safe and profitable investment opportunities, leveraging their expertise to offer the best solutions to our clients.",
+		"about_team_description_19": "Each team member shares strong ethical principles and brings a unique perspective, allowing us to find innovative solutions tailored to each need.",
+		"about_team_description_20": "We foster a collaborative work environment, always focused on shared success and client satisfaction.",
+		"about_team_description_21": "Our team is key to every successful investment, combining precise analysis and an entrepreneurial mindset to offer secure opportunities in a dynamic market.",
 
 
   "projects": "Projects",
@@ -61,10 +91,14 @@
   "footer_about": "About Us",
 	"footer_description": "We are committed to bringing you the best opportunities to grow and invest.",
 	"footer_links": "Quick Links",
+	"footer_home_link": "Home",
 	"footer_about_link": "About Us",
 	"footer_projects_link": "Projects",
 	"footer_contact_link": "Contact",
 	"footer_follow_us": "Follow Us",
-	"footer_copyright": "© 2024 QbaPV. All rights reserved."
+	"footer_privacy": "Privacy Policy",
+	"footer_terms": "Terms and Conditions",
+	"footer_cookies": "Cookie Policy",
+	"footer_copyright": " QbaPV. All rights reserved."
   
  }

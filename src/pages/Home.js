@@ -65,8 +65,9 @@ const Home = () => {
                 </h2> 			
 				
 				<div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 md:mb-20">
+
 					{/* Proyecto 1 */}
-					<div className="bg-gradient-to-br from-gray-200 to-gray-400 rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
+					<div className="bg-gradient-to-br from-gray-200 to-gray-400 rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105 flex flex-col min-h-[450px]">
 						<img src={forexHome} alt={t('project_1')} className="w-full h-32 md:h-48 object-cover shadow-2xl hover:shadow-2xl transition-shadow duration-300" />
 						<div className="p-6">
 							<h3 className="text-xl font-semibold text-gray-800 mb-3">
@@ -82,7 +83,7 @@ const Home = () => {
 					</div>
 
 					{/* Proyecto 2 */}
-					<div className="bg-gradient-to-br from-gray-200 to-gray-400 rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
+					<div className="bg-gradient-to-br from-gray-200 to-gray-400 rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105 flex flex-col min-h-[450px]">
 						<img src={criptoHome} alt={t('project_2')} className="w-full h-32 md:h-48 object-cover shadow-2xl hover:shadow-2xl transition-shadow duration-300" />
 						<div className="p-6">
 							<h3 className="text-xl font-semibold text-gray-800 mb-3">
@@ -98,7 +99,7 @@ const Home = () => {
 					</div>
 
 					{/* Proyecto 3 */}
-					<div className="bg-gradient-to-br from-gray-200 to-gray-400 rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
+					<div className="bg-gradient-to-br from-gray-200 to-gray-400 rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105 flex flex-col min-h-[450px]">
 						<img src={freebitcoinHome} alt={t('project_3')} className="w-full h-32 md:h-48 object-cover shadow-2xl hover:shadow-2xl transition-shadow duration-300" />
 						<div className="p-6">
 							<h3 className="text-xl font-semibold text-gray-800 mb-3">
@@ -113,11 +114,11 @@ const Home = () => {
 						</div>
 					</div>
 				</div>
-				
+
+				{/* Testimonios */}
 				<section className="bg-gradient-to-br from-gray-200 to-gray-400 py-10 mt-20">
 					<div className="max-w-7xl mx-auto px-4">
 						<h2 className="text-3xl font-bold text-gray-900 shadow-black mb-10 animate-fade-in tracking-tight shadow-lg" style={{ textShadow: '1px 1px 3px rgba(255, 255, 255, 0.7)' }}>{t('testimonials_title')}</h2>
-					{/*	<h2 className="text-3xl font-bold text-center mb-6">{t('testimonials_title')}</h2> */}
 						<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 							<div className="bg-white shadow-lg p-6 rounded-lg">
 								<img
@@ -155,8 +156,9 @@ const Home = () => {
 						</div>
 					</div>
 				</section>
-				
-				<footer className="bg-gray-900 text-white py-8">
+
+				{/* Footer */}
+				<footer className="bg-gray-900 text-white py-8 mt-20">
 				    <div className="max-w-7xl mx-auto px-4">
 						<div className="flex flex-col md:flex-row justify-between space-y-6 md:space-y-0 md:space-x-8">
 						    <div className="mb-4 md:mb-0">
@@ -180,9 +182,19 @@ const Home = () => {
 							    </div>
 						    </div>
 						</div>
-						<p className="text-center text-gray-500 text-sm mt-6">
-						    {t('footer_copyright')}
-						</p>
+						<div className="flex flex-col md:flex-row justify-center space-y-6 md:space-y-0 md:space-x-8 mt-6">
+                        <div className="flex justify-center md:justify-end space-x-4">
+                            <a href="#" className="text-sm text-gray-400 hover:text-white">{t('footer_privacy')}</a>
+							<span className="text-gray-400">|</span>
+                            <a href="#" className="text-sm text-gray-400 hover:text-white">{t('footer_terms')}</a>
+							<span className="text-gray-400">|</span>
+							<a href="#" className="text-sm text-gray-400 hover:text-white">{t('footer_cookies')}</a>
+                        </div>
+                    </div>
+					<p className="text-center text-gray-500 text-sm mt-2">
+						&copy; {new Date().getFullYear()}
+						{t('footer_copyright')}
+					</p>
 				    </div>
 				</footer>
 			</div>
