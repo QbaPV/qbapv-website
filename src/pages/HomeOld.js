@@ -1,15 +1,13 @@
+// HomeOld.js
 // src/pages/Home.js
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faRocket } from '@fortawesome/free-solid-svg-icons'; // Icono de ejemplo
-import { faBookOpen } from '@fortawesome/free-solid-svg-icons';
 import '../styles/styles.css';
 import Footer from '../components/Footer';
-import backgroundImage from '../assets/images/your-background.jpg';
 import forexHome from '../assets/images/forex-home.jpg';
 import criptoHome from '../assets/images/cripto-home.jpg';
+import backgroundImage from '../assets/images/your-background.jpg';
 import freebitcoinHome from '../assets/images/freebitcoin-home.jpg';
 
 const Home = () => {
@@ -51,13 +49,9 @@ const Home = () => {
                 <p className="text-xl font-semibold text-[#DAA520] shadow-black mb-8 md:mb-20 animate-fade-in delay-100 leading-relaxed" style={{ textShadow: '3px 2px 3px rgba(0, 0, 0, 2)' }}>
                     {t('home_description_07')}
                 </p>
-                <Link 
-                    to="/projects" 
-                    className="bg-blue-300 border-2 border-blue-600 font-semibold text-black px-8 py-4 mt-2 mb-8 inline-flex items-center justify-center rounded-md shadow-md transition-transform transform hover:scale-105 hover:bg-blue-200 hover:border-blue-600 duration-300 w-auto"
-                >
-                    <FontAwesomeIcon icon={faRocket} className="mr-2" /> 
+                <Link to="/projects" className="bg-blue-600 text-[#f5f5f5] px-8 py-4 rounded-full shadow-lg transition-transform transform hover:scale-110 hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-400 focus:ring-opacity-50 duration-300">
                     {t('button_explore_project')}
-                </Link>                        
+                </Link>
             </div>
 
             {/* Sección de estadísticas */}
@@ -83,13 +77,9 @@ const Home = () => {
                             <p className="text-gray-600 mb-4">
                                 {t('project_1_description')}
                             </p>
-                            <Link 
-                                to="/projects/forex" 
-                                className="bg-blue-300 border-2 border-blue-600 font-semibold text-black px-4 py-2 mt-2 mb-8 inline-flex items-center justify-center rounded-full shadow-md transition-transform transform hover:scale-105 hover:bg-blue-200 hover:border-blue-600 duration-300 w-auto"
-                            >
-                                <FontAwesomeIcon icon={faBookOpen} className="mr-2" />
+                            <Link to="/projects/forex" className="bg-blue-600 text-[#f5f5f5] px-4 py-2 rounded-full shadow-lg hover:bg-blue-700 transition-color transform hover:scale-105 duration-300">
                                 {t('button_learn_more')}
-                            </Link>
+                            </Link>                     
                         </div>
                     </div>
 
@@ -103,13 +93,9 @@ const Home = () => {
                             <p className="text-gray-600 mb-4">
                                 {t('project_2_description')}
                             </p>
-                            <Link 
-                                to="/projects/cripto" 
-                                className="bg-blue-300 border-2 border-blue-600 font-semibold text-black px-4 py-2 mt-2 mb-8 inline-flex items-center justify-center rounded-full shadow-md transition-transform transform hover:scale-105 hover:bg-blue-200 hover:border-blue-600 duration-300 w-auto"
-                            >
-                                <FontAwesomeIcon icon={faBookOpen} className="mr-2" />
+                            <Link to="/projects/cripto" className="bg-blue-600 text-[#f5f5f5] px-4 py-2 rounded-full shadow-lg hover:bg-blue-700 transition-color transform hover:scale-105 duration-300">
                                 {t('button_learn_more')}
-                            </Link>
+                            </Link>                                                
                         </div>
                     </div>
 
@@ -123,19 +109,15 @@ const Home = () => {
                             <p className="text-gray-600 mb-4">
                                 {t('project_3_description')}
                             </p>
-                            <Link 
-                                to="/projects/freebitcoin" 
-                                className="bg-blue-300 border-2 border-blue-600 font-semibold text-black px-4 py-2 mt-2 mb-8 inline-flex items-center justify-center rounded-full shadow-md transition-transform transform hover:scale-105 hover:bg-blue-200 hover:border-blue-600 duration-300 w-auto"
-                            >
-                                <FontAwesomeIcon icon={faBookOpen} className="mr-2" />
+                            <Link to="/projects/freebitcoin" className="bg-blue-600 text-[#f5f5f5] px-4 py-2 rounded-full shadow-lg hover:bg-blue-700 transition-color transform hover:scale-105 duration-300">
                                 {t('button_learn_more')}
-                            </Link>
+                            </Link>                                                
                         </div>
                     </div>
                 </div>
 
                 {/* Sección de testimonios */}
-                <section className="bg-gradient-to-br from-gray-200 to-[#54606c] py-10 mt-20">
+                <section className="bg-gradient-to-br from-gray-200 to-gray-400 py-10 mt-20">
                     <div className="max-w-7xl mx-auto px-4">
                         <h2 className="text-3xl font-bold text-gray-900 shadow-black mb-10 animate-fade-in tracking-tight shadow-lg" style={{ textShadow: '1px 1px 3px rgba(255, 255, 255, 0.7)' }}>{t('testimonials_title')}</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -160,22 +142,21 @@ const Home = () => {
                                 <p className="mt-4 text-gray-600 text-center">
                                     {t('person_2_testimonial')}
                                 </p>
-                            </div>
-                            <div className="bg-white shadow-lg p-6 rounded-lg">
-                                <img
-                                    className="w-16 h-16 rounded-full mx-auto mb-4"
-                                    src="https://via.placeholder.com/150"
-                                    alt="Testimonial 3"
-                                />
-                                <h3 className="text-xl font-bold text-center">{t('person_3_name')}</h3>
-                                <p className="mt-4 text-gray-600 text-center">
-                                    {t('person_3_testimonial')}
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                
+							</div>
+							<div className="bg-white shadow-lg p-6 rounded-lg">
+								<img
+								    className="w-16 h-16 rounded-full mx-auto mb-4"
+								    src="https://via.placeholder.com/150"
+								    alt="Testimonial 3"
+								/>
+								<h3 className="text-xl font-bold text-center">{t('person_3_name')}</h3>
+								<p className="mt-4 text-gray-600 text-center">
+								    {t('person_3_testimonial')}
+								</p>
+						    </div>
+						</div>
+					</div>
+				</section>
 
 				{/* Footer */}
 				<Footer />
@@ -186,3 +167,5 @@ const Home = () => {
 };
 
 export default Home;
+
+

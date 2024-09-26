@@ -56,6 +56,16 @@
   	  "about_team_description_21": "Nuestro equipo es clave para el éxito de cada inversión, ya que combina un análisis preciso y una mentalidad emprendedora para ofrecer oportunidades seguras en un mercado dinámico.",
 
 
+      "timeline_title": "Nuestra Historia",
+        "timeline_event_1_title": "Fundación de la Empresa",
+        "timeline_event_1_description": "En realidad, iniciamos nuestro camino muchos años antes con la visión de alcanzar esa ansiada libertad financiera. Sin embargo, fue en 2020 cuando fundamos la empresa QbaPV. A partir de ese momento, esa visión inicial se complementó con el deseo de compartir nuestros logros con los demás.",
+        "timeline_event_2_title": "Primer Proyecto Rentable",
+        "timeline_event_2_description": "Freebitcoin: Lo veníamos operando desde 2015, pero fue en 2021 cuando empezamos a verlo como un proyecto y se convirtió en nuestro primer emprendimiento que nos brindaba rentabilidades diarias. Freebitcoin nos dio ese impulso inicial y nos hizo darnos cuenta de que había muchos más proyectos esperándonos.",
+        "timeline_event_3_title": "Expansión",
+        "timeline_event_3_description": "En 2022, nuestra expansión comenzó más allá de las criptomonedas. Forex, que no era nuevo para nosotros ya que nos habíamos aventurado en el desde 2013, pasó a formar parte de nuestro portafolio, junto con las opciones binarias, la minería en línea y hasta los juegos en línea ¿Por qué no? se sumaron a nuestra cartera de proyectos.",
+        "timeline_event_4_title": "Nuevas Tendencias Tecnologías",
+        "timeline_event_4_description": "A partir de 2023, incorporamos las últimas tendencias tecnológicas a nuestros proyectos. Trabajamos con Bots de trading automatizados para nuestras operaciones comerciales y aprovechamos la Inteligencia Artificial para el desarrollo de nuestras estrategias, su implementación y puesta a punto.",
+  
 
   "projects": "Proyectos",
     "project_1": "Forex",    
@@ -101,6 +111,6 @@
   "footer_privacy": "Política de Privacidad",
   "footer_terms": "Términos y Condiciones",
   "footer_cookies": "Política de Cookies",
- 	"footer_copyright": " QbaPV. Todos los derechos reservados."
+ 	"footer_copyright": "© 2024 QbaPV. Todos los derechos reservados."
 	
  }

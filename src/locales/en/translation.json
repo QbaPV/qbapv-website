@@ -53,6 +53,16 @@
 		"about_team_description_20": "We foster a collaborative work environment, always focused on shared success and client satisfaction.",
 		"about_team_description_21": "Our team is key to every successful investment, combining precise analysis and an entrepreneurial mindset to offer secure opportunities in a dynamic market.",
 
+		"timeline_title": "Our History",
+			"timeline_event_1_title": "Foundation of the Company",
+			"timeline_event_1_description": "In reality, we began our journey many years earlier with the vision of achieving that long-desired financial freedom. However, it was in 2020 that we founded the company QbaPV. From that moment on, that initial vision was complemented by the desire to share our achievements with others.",
+			"timeline_event_2_title": "First Profitable Project",
+			"timeline_event_2_description": "Freebitcoin: We had been operating it since 2015, but it was in 2021 that we began to see it as a project, and it became our first venture that provided us with daily profitable returns. Freebitcoin gave us that initial boost and made us realize that there were many more projects waiting for us.",
+			"timeline_event_3_title": "Expansion",
+			"timeline_event_3_description": "In 2022, our expansion began beyond cryptocurrencies. Forex, which was not new to us since we had ventured into it in 2013, became part of our portfolio, along with Binary Options, online mining, and even online games – why not? These were added to our project portfolio.",
+			"timeline_event_4_title": "New Technological Trends",
+			"timeline_event_4_description": "Starting in 2023, we incorporated the latest technological trends into our projects. We work with automated trading bots for our trading operations and leverage Artificial Intelligence for the development of our strategies, their implementation, and fine-tuning.",
+
 
   "projects": "Projects",
 	"project_1": "Forex",
@@ -99,6 +109,6 @@
 	"footer_privacy": "Privacy Policy",
 	"footer_terms": "Terms and Conditions",
 	"footer_cookies": "Cookie Policy",
-	"footer_copyright": " QbaPV. All rights reserved."
+	"footer_copyright": "© 2024 QbaPV. All rights reserved."
   
  }

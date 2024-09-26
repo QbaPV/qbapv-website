@@ -86,3 +86,55 @@ nav ul li a:hover {
 .language-selector button:hover {
     text-decoration: underline;
 }
+
+
+.timeline-container {
+    position: relative;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Transparencia */
+    border-radius: 12px; /* Esquinas redondeadas */
+    padding: 2rem; /* Espaciado interno */
+    margin: 2rem auto; /* Centrar el contenedor y ajustar márgenes */
+    max-width: 95%; /* Reducir el tamaño del contenedor */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8); /* Sombra */
+  }
+  
+
+.timeline-event {
+    position: relative;
+    padding: 1rem;
+}
+
+.timeline-event span {
+    position: absolute;
+    font-size: 1.5rem;
+    top: -1.25rem;
+    left: -2.5rem;
+    background-color: #2563eb;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.border-l-4 {
+    height: 100%;
+    width: 4px;
+    background-color: #2563eb;
+    position: absolute;
+    left: 50%;
+}
+
+.timeline-line {
+    background-color: #007bff;
+}
+
+.bg-opacity-80 {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.timeline-year {
+  margin-bottom: -20px; /* Ajustar el margen para acercar los años */
+  font-weight: bold;
+  color: #007bff;
+}
