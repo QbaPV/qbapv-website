@@ -23,6 +23,7 @@ const LanguageSelector = () => {
 
     const changeLanguage = (lang) => {
         i18n.changeLanguage(lang);
+        localStorage.setItem('language', lang); // Corregido a 'lang'
         setShowMenu(false); // Ocultar el menú al seleccionar un idioma
     };
 
@@ -30,7 +31,7 @@ const LanguageSelector = () => {
         <div className="relative">
             <button onClick={toggleMenu} className="flex items-center space-x-1 text-[#DAA520] hover:text-green-400">
                 <img src={currentLanguage.flag} alt={currentLanguage.name} className="w-4 h-4" /> {/* Ajustar tamaño de la bandera */}
-				<span className="text-sm">{currentLanguage.code.toUpperCase()}</span> {/* Tamaño del texto */}
+                <span className="text-sm">{currentLanguage.code.toUpperCase()}</span> {/* Tamaño del texto */}
                 <FaChevronDown className="ml-1" />
             </button>
 

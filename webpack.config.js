@@ -9,6 +9,11 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js',
     },
+
+    devServer: {
+        port: 4000, // Cambia esto al puerto que prefieras
+      },
+
     module: {
         rules: [
             {

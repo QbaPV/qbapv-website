@@ -84,11 +84,35 @@
     "button_learn_more": "Saber más",
 
   "contact": "Contacto",
-    "name": "Nombre",
-    "email": "Correo electrónico",
+    "contact_us": "Contáctanos",
+    "Contact_description_1": "Deja tu mensaje y te responderemos lo antes posible:", 
+    "name": "Nombre completo",
+    "whatsapp": "Whatsapp",
+    "email_label": "Correo electrónico",
+    "user_local": "ej. info",
+    "domain": "ej. qbapv",
+    "tld": "ej. com",
     "message": "Mensaje",    
     "submit": "Enviar",
-
+    "name_required": "El nombre es obligatorio",
+    "email_required": "El correo electrónico es obligatorio. Por favor rellene todos los campos.",
+    "email_invalid": "Por favor, introduce un correo electrónico válido",
+    "email_yahoo_not_allowed": "No se permiten correos de Yahoo. Por favor, use otro servicio de correo.",
+    "user_local_required": "Campo requerido",
+    "domain_required": "Campo requerido",
+    "tld_required": "Requerido",
+    "email_invalid_char_local":"Signo @ no válido",
+    "email_invalid_char_domain":"Signo @ no válido",
+    "tld_invalid":"No válido",
+    "message_required": "El mensaje es obligatorio",
+    "message_success": "¡Tu mensaje ha sido enviado con éxito!",
+    "phone_invalid": "Número de teléfono no válido",
+    "our_location": "Nuestra Ubicación",
+    "validation": {
+      "required": "Este campo es obligatorio",
+      "email": "Incluye un signo \"@\" en la dirección de correo electrónico. La dirección \"${value}\" no incluye el signo \"@\"."
+    },
+   
 	
   "blog": "Blog",
   	"blog_title0001": "Título del primer Blog",
@@ -111,6 +135,10 @@
   "footer_privacy": "Política de Privacidad",
   "footer_terms": "Términos y Condiciones",
   "footer_cookies": "Política de Cookies",
- 	"footer_copyright": "© 2024 QbaPV. Todos los derechos reservados."
+ 	"footer_copyright": "© 2024 QbaPV. Todos los derechos reservados.",
+
+  "countries": "Países",
+    "spain": "España" 
+  
 	
  }

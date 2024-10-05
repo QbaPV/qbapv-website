@@ -2,7 +2,7 @@ const Project_Fx_Details = ({ project }) => {
     return (
         <div>
             <h1>Detalles del proyecto: {project}</h1>
-            {/* Agrega m·s detalles aquÌ */}
+            {/* Agrega m√°s detalles aqu√≠ */}
         </div>
     );
 };

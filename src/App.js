@@ -11,6 +11,7 @@ import ForexDetails from './pages/Project_Fx_Details';
 import Contact from './pages/Contact';
 import Blog from './pages/Blog'; // Asegúrate de que Blog esté correctamente importado
 import Register from './pages/Register'; // Asegúrate de que Register esté correctamente importado
+import AdminEmail from './pages/AdminEmail';
 
 const App = () => {
   return (
@@ -21,14 +22,15 @@ const App = () => {
         <Route path="/about" element={<About />} />
 		
         <Route path="/projects" element={<Projects />} />
-		<Route path="/projects/forex" element={<ForexDetails project="forex" />} />
-		<Route path="/projects/cripto" element={<CriptoDetails project="cripto" />} />
-		<Route path="/projects/freebitcoin" element={<FreebitcoinDetails project="freebitcoin" />} />
+        <Route path="/projects/forex" element={<ForexDetails project="forex" />} />
+        <Route path="/projects/cripto" element={<CriptoDetails project="cripto" />} />
+        <Route path="/projects/freebitcoin" element={<FreebitcoinDetails project="freebitcoin" />} />
 
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<Blog />} />
-	    <Route path="/register" element={<Register />} /> {/* Agregar la ruta */}
+  	    <Route path="/register" element={<Register />} /> {/* Agregar la ruta */}
 
+        <Route path="/admin-email" element={<AdminEmail />} />
 		
        </Routes>
     </Router>

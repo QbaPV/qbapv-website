@@ -82,11 +82,35 @@
 
 	
   "contact": "Contact",
-	"name": "Name",
-	"email": "Email",
+	"contact_us": "Contact Us",
+	"Contact_description_1": "Leave your message and we will respond as soon as possible:", 
+	"name": "Full Name",
+	"whatsapp": "Whatsapp",
+	"email_label": "Email",
+	"user_local": "e.g., info",
+    "domain": "e.g., qbapv",
+    "tld": "e.g, com",
 	"message": "Message",    
     "submit": "Submit",
-	
+	"name_required": "Name is required",
+	"email_required": "Email is required. Please fill in all fields.",
+	"email_invalid": "Please enter a valid email address",
+	"email_yahoo_not_allowed": "We do not accept Yahoo emails for sending messages. Please use a different email provider.",
+	"user_local_required": "Required field",
+	"domain_required": "Required field",
+    "tld_required": "Required",
+    "email_invalid_char_local":"Invalid @ sign",
+	"email_invalid_char_domain":"Invalid @ sign",
+    "tld_invalid":"Invalid",
+	"message_required": "Message is required",
+	"message_success": "Your message has been successfully sent!",
+	"phone_invalid": "Invalid phone number",
+	"our_location": "Our Location",
+	"validation": {
+		"required": "This field is required",
+		"email": "Include an \"@\" in the email address. The address \"${value}\" is missing an \"@\"."
+	},
+		  
 
   "blog": "Blog",
 	"blog_title0001": "Title of the first Blog",
@@ -109,6 +133,10 @@
 	"footer_privacy": "Privacy Policy",
 	"footer_terms": "Terms and Conditions",
 	"footer_cookies": "Cookie Policy",
-	"footer_copyright": "© 2024 QbaPV. All rights reserved."
+	"footer_copyright": "© 2024 QbaPV. All rights reserved.",
+
+  "countries": "Countries",
+    "spain": "Spain" 
+
   
  }

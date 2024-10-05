@@ -19,7 +19,7 @@ const About = () => {
 
     return (
         <div className="about-container px-6 py-12 bg-gradient-to-br from-[#626361] to-[#54606c] min-h-screen flex flex-col justify-center relative z-10 text-center p-12 mt-50">
-            <h1 className="text-4xl font-bold text-gray-900 shadow-black mb-6 animate-fade-in tracking-tight shadow-lg text-center" style={{ textShadow: '1px 1px 3px rgba(255, 255, 255, 0.7)' }}>{t('about')}</h1>
+            <h1 className="text-5xl font-bold text-gray-900 shadow-black mb-6 animate-fade-in tracking-tight shadow-lg text-center" style={{ textShadow: '1px 1px 3px rgba(255, 255, 255, 0.7)' }}>{t('about')}</h1>
 
             {/* Sección Quiénes somos */}
             <section className="py-12">
@@ -33,7 +33,7 @@ const About = () => {
                         <p className="mb-6 text-xl font-semibold text-gray-900 animate-fade-in text-center">{t('about_overview_description_04')}</p>
                         <Link 
                             to="/projects" 
-                            className="bg-green-300 border-2 border-green-600 font-semibold text-black px-8 py-4 mt-2 mb-8 inline-flex items-center justify-center rounded-md shadow-md transition-transform transform hover:scale-105 hover:bg-green-200 hover:border-green-600 duration-300 w-auto"
+                            className="bg-green-300 border-2 border-green-600 font-semibold text-black px-8 py-4 mt-2 mb-8 inline-flex items-center justify-center rounded-md shadow-lg shadow-black transition-transform transform hover:scale-105 hover:bg-green-200 hover:border-green-600 duration-300 w-auto"
                         >
                             <FontAwesomeIcon icon={faRocket} className="mr-2" /> 
                             {t('button_explore_project')}
