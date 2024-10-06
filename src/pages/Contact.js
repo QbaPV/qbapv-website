@@ -151,7 +151,7 @@ const Contact = () => {
       });
 
       // **Envío de correo personalizado desde `info@qbapv.com`**
-      await fetch(`${process.env.REACT_APP_BACKEND_URL}/store-email`, {
+      await fetch(`${process.env.REACT_APP_BACKEND_URL}/send-personalized-reply`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -167,7 +167,7 @@ const Contact = () => {
       .catch(error => console.error('Error enviando respuesta personalizada:', error));
 
       // **Envío de correo unidireccional desde `no-reply@qbapv.com`**
-      await fetch(`${process.env.REACT_APP_BACKEND_URL}/store-email`, {
+      await fetch(`${process.env.REACT_APP_BACKEND_URL}/send-no-reply-email`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
