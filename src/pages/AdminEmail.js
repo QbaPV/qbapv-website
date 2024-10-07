@@ -90,6 +90,7 @@ const AdminEmail = () => {
           >
             <option value="info@qbapv.com">info@qbapv.com</option>
             <option value="no-reply@qbapv.com">no-reply@qbapv.com</option>
+            <option value="support@qbapv.com">support@qbapv.com</option>
           </select>
         </label>
         <button 

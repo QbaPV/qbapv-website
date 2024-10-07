@@ -21,7 +21,7 @@
 
 
 
-  "about": "Acerca de nosotros",
+  "about": "Nosotros",
 
     "about_overview_title": "Quiénes somos",
       "about_overview_description": "Somos una empresa especializada en identificar en qué proyectos o negocios es rentable invertir.",
@@ -102,7 +102,7 @@
     "domain_required": "Campo requerido",
     "tld_required": "Requerido",
     "email_invalid_char_local":"Signo @ no válido",
-    "email_invalid_char_domain":"Signo @ no válido",
+    "email_invalid_char_domain":"Carácter no válido",
     "tld_invalid":"No válido",
     "message_required": "El mensaje es obligatorio",
     "message_success": "¡Tu mensaje ha sido enviado con éxito!",

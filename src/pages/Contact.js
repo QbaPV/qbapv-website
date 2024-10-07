@@ -159,7 +159,8 @@ const Contact = () => {
         body: JSON.stringify({
           email: email, // Correo del usuario
           subject: 'Seguimiento a tu consulta',
-          message: `Gracias por tu consulta, ${formData.name}. Estaremos en contacto para más detalles.`
+          message: `Gracias por tu consulta, ${formData.name}. Estaremos en contacto para más detalles.`,
+          from: 'info@qbapv.com' // Aquí defines la dirección de envío
         })
       })
       .then(response => response.json())
@@ -175,12 +176,30 @@ const Contact = () => {
         body: JSON.stringify({
           email: email, // Correo del usuario
           subject: 'Confirmación de tu consulta',
-          message: 'Tu mensaje ha sido recibido correctamente. No es necesario responder a este correo.'
+          message: 'Tu mensaje ha sido recibido correctamente. No es necesario responder a este correo.',
+          from: 'no-reply@qbapv.com' // Aquí defines la dirección de envío
         })
       })
       .then(response => response.json())
       .then(data => console.log('Correo unidireccional enviado:', data))
       .catch(error => console.error('Error enviando correo unidireccional:', error));
+
+      // **Envío de correo para atención al cliente desde `support@qbapv.com`**
+      await fetch('http://143.198.52.139:5000/send-personalized-reply', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          email: email, // Correo del usuario
+          subject: 'Confirmación de tu consulta',
+          message: `Gracias por tu consulta, ${formData.name}. Estaremos en contacto para más detalles.`,
+          from: 'support@qbapv.com' // Aquí defines la dirección de envío
+        })
+      })
+      .then(response => response.json())
+      .then(data => console.log('Respuesta al cliente:', data))
+      .catch(error => console.error('Error enviando respuesta al cliente:', error));
 
       // Enviar los datos del formulario a Mailgun, pero sin el correo del usuario
       sendFormData(recaptchaToken, messageId);
