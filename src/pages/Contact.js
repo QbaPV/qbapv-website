@@ -139,7 +139,7 @@ const Contact = () => {
       const email = `${formData.user_local}@${formData.domain}.${formData.tld}`;
 
       // Almacenar el correo del usuario con el ID en el backend
-      await fetch('http://143.198.52.139:5000/store-email', {
+      await fetch(`${process.env.REACT_APP_BACKEND_URL}/store-email`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -151,7 +151,7 @@ const Contact = () => {
       });
 
       // **Envío de correo personalizado desde `info@qbapv.com`**
-      await fetch('http://143.198.52.139:5000/send-personalized-reply', {
+      await fetch(`${process.env.REACT_APP_BACKEND_URL}/send-personalized-reply`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -168,7 +168,7 @@ const Contact = () => {
       .catch(error => console.error('Error enviando respuesta personalizada:', error));
 
       // **Envío de correo unidireccional desde `no-reply@qbapv.com`**
-      await fetch('http://143.198.52.139:5000/send-no-reply-email', {
+      await fetch(`${process.env.REACT_APP_BACKEND_URL}/send-no-reply-email`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -236,7 +236,7 @@ const Contact = () => {
     });
   
     try {
-      const response = await fetch('http://143.198.52.139:5000/send-email', {
+      const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/store-email`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
