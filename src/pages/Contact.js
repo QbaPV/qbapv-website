@@ -1,6 +1,6 @@
 // src/pages/Contact.js
 import React, { useState } from 'react';
-import Footer from '../components/Footer';
+
 import { useTranslation } from 'react-i18next';
 import empresaContact from '../assets/images/empresa-contact.jpg';
 import SubmitButton from '../components/SubmitButton'; // Botón personalizado
@@ -436,9 +436,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-
-      {/* Footer */}
-      <Footer />
 
       {/* Componente ToastContainer para los mensajes personalizados */}
       <ToastContainer />

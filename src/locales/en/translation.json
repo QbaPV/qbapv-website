@@ -123,10 +123,17 @@
 	
 	
   "footer_about": "About Us",
-	"footer_description": "We are committed to bringing you the best opportunities to grow and invest.",
-	"footer_links": "Quick Links",
-	"footer_home_link": "Home",
-	"footer_about_link": "About Us",
+  "footer_description": "We are committed to bringing you the best opportunities to grow and invest.",
+  "footer_links": "Quick Links",
+  "footer_quick_links": "Quick Links",
+  "footer_contact_info": "Contact Info",
+  "footer_newsletter": "Newsletter",
+  "footer_newsletter_description": "Subscribe to get the latest updates and opportunities.",
+  "footer_email_placeholder": "Enter your email",
+  "footer_newsletter_success": "Successfully subscribed!",
+  "footer_all_rights_reserved": "All rights reserved.",
+  "footer_home_link": "Home",
+  "footer_about_link": "About Us",
 	"footer_projects_link": "Projects",
 	"footer_contact_link": "Contact",
 	"footer_follow_us": "Follow Us",
@@ -135,8 +142,18 @@
 	"footer_cookies": "Cookie Policy",
 	"footer_copyright": "© 2024 QbaPV. All rights reserved.",
 
-  "countries": "Countries",
-    "spain": "Spain" 
+	"stats_projects": "Successful Projects",
+	"stats_users": "Happy Users",
+	"stats_countries": "Countries",
+	"stats_satisfaction": "Satisfaction",
+	"cta_title": "Ready to Start Your Investment Journey?",
+	"cta_description": "Join thousands of users who are already growing their portfolio with us",
+	"cta_button_projects": "View Projects",
+	"cta_button_contact": "Contact Us",
 
+  "countries": "Countries",
+    "spain": "Spain",
+
+  "languages_available": "languages available"
   
  }

@@ -17,7 +17,7 @@ const Timeline = () => {
     ];
 
     return (
-        <div className="timeline-container relative py-12" style={{ backgroundColor: 'rgba(255, 255, 255, 0.7)', borderRadius: '12px', padding: '20px' }}>    
+        <div className="timeline-container relative py-12" style={{ backgroundColor: '#E5E7EB', borderRadius: '12px', padding: '20px' }}>    
             <h2 className="text-4xl font-bold text-gray-900 shadow-black mb-12 animate-fade-in tracking-tight shadow-lg text-center" style={{ textShadow: '1px 1px 3px rgba(255, 255, 255, 0.7)' }}>{t('timeline_title')}</h2>
             <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/*     <div className="absolute inset-0 flex justify-center">
@@ -34,27 +34,27 @@ const Timeline = () => {
                         </div>
                         
                         <div className="relative z-12 w-12 h-12 flex items-center justify-center">
-                            <FontAwesomeIcon icon={event.iconArrow} className="text-2xl" />
+                            <FontAwesomeIcon icon={event.iconArrow} className="text-2xl text-gray-700" />
                         </div>
                         
                         <div className="relative z-12 w-12 h-12 flex items-center justify-center bg-green-200 border-4 border-[#DAA520] text-black rounded-full">
                             <FontAwesomeIcon icon={event.icon} className="text-2xl" />
                         </div>
 
-                        <div className="relative z-6 w-6 h-6 text-[#CED0D2] flex items-center justify-center">
+                        <div className="relative z-6 w-6 h-6 flex items-center justify-center" style={{ color: '#E5E7EB' }}>
                             <FontAwesomeIcon icon={event.iconSquare} className="text-2xl" />
                         </div>
 
                         <div className="w-12/12 text-right">
                            
                             <span 
-                                className="text-lg font-bold text-black">{event.year1}
+                                className="text-lg font-bold text-gray-800">{event.year1}
                             </span>
                         </div>
                         <div className="w-7/12 text-right">
                               
                             <span 
-                                className="text-lg font-bold text-black">{event.year0}
+                                className="text-lg font-bold text-gray-800">{event.year0}
                             </span>
                         </div>
 

@@ -1,4 +1,5 @@
 {
+  "languages_available": "idiomas disponibles",
   "home": "Inicio",
 
     "welcome": "Bienvenido a QbaPV",
@@ -125,20 +126,38 @@
 	
 	
   "footer_about": "Acerca de nosotros",
-	"footer_description": "Nos comprometemos a brindarle las mejores oportunidades para crecer e invertir.",
-	"footer_links": "Enlaces rápidos",
+  "footer_description": "Nos comprometemos a brindarle las mejores oportunidades para crecer e invertir.",
+  "footer_links": "Enlaces rápidos",
+  "footer_quick_links": "Enlaces rápidos",
+  "footer_contact_info": "Información de contacto",
+  "footer_newsletter": "Boletín informativo",
+  "footer_newsletter_description": "Suscríbete para recibir las últimas actualizaciones y oportunidades.",
+  "footer_email_placeholder": "Ingresa tu correo electrónico",
+  "footer_newsletter_success": "¡Suscripción exitosa!",
+  "footer_all_rights_reserved": "Todos los derechos reservados.",
   "footer_home_link": "Inicio",
-	"footer_about_link": "Acerca de nosotros",
+  "footer_about_link": "Acerca de nosotros",
 	"footer_projects_link": "Proyectos",
 	"footer_contact_link": "Contacto",
 	"footer_follow_us": "Síganos",
-  "footer_privacy": "Política de Privacidad",
-  "footer_terms": "Términos y Condiciones",
-  "footer_cookies": "Política de Cookies",
+	"footer_privacy": "Política de Privacidad",
+	"footer_terms": "Términos y Condiciones",
+	"footer_cookies": "Política de Cookies",
  	"footer_copyright": "© 2024 QbaPV. Todos los derechos reservados.",
 
+	"stats_projects": "Proyectos Exitosos",
+	"stats_users": "Usuarios Satisfechos",
+	"stats_countries": "Países",
+	"stats_satisfaction": "Satisfacción",
+	"cta_title": "¿Listo para Comenzar tu Viaje de Inversión?",
+	"cta_description": "Únete a miles de usuarios que ya están haciendo crecer su portafolio con nosotros",
+	"cta_button_projects": "Ver Proyectos",
+	"cta_button_contact": "Contáctanos",
+
   "countries": "Países",
-    "spain": "España" 
+    "spain": "España",
+  
+  "languages_available": "idiomas disponibles" 
   
 	
- }
+}
