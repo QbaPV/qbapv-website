@@ -12,6 +12,7 @@ import ForexDetails from './pages/Project_Fx_Details';
 import Contact from './pages/Contact';
 import Blog from './pages/Blog';
 import Register from './pages/Register';
+import BlogPost from './pages/BlogPost';
 import AdminEmail from './pages/AdminEmail';
 
 const App = () => {
@@ -28,6 +29,7 @@ const App = () => {
           <Route path="/projects/freebitcoin" element={<FreebitcoinDetails project="freebitcoin" />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:id" element={<BlogPost />} />
           <Route path="/register" element={<Register />} />
           <Route path="/admin-email" element={<AdminEmail />} />
         </Routes>

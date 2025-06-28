@@ -227,7 +227,7 @@ const Home = () => {
             {/* Project 1 - Forex */}
             <div 
               id="project-1"
-              className={`group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-2xl animate-on-scroll ${
+              className={`group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-2xl animate-on-scroll flex flex-col h-full ${
                 isVisible['project-1'] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               }`}
             >
@@ -239,27 +239,29 @@ const Home = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
-              <div className="p-6">
+              <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
                   {t('project_1_title')}
                 </h3>
-                <p className="text-gray-600 mb-6 line-clamp-3">
+                <p className="text-gray-600 mb-6 flex-grow">
                   {t('project_1_description')}
                 </p>
-                <Link 
-                  to="/projects/forex"
-                  className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transform hover:scale-105 transition-all duration-300"
-                >
-                  <FontAwesomeIcon icon={faBookOpen} className="mr-2" />
-                  {t('button_learn_more')}
-                </Link>
+                <div className="mt-auto">
+                  <Link 
+                    to="/projects/forex"
+                    className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transform hover:scale-105 transition-all duration-300"
+                  >
+                    <FontAwesomeIcon icon={faBookOpen} className="mr-2" />
+                    {t('button_learn_more')}
+                  </Link>
+                </div>
               </div>
             </div>
 
             {/* Project 2 - Crypto */}
             <div 
               id="project-2"
-              className={`group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-2xl animate-on-scroll delay-100 ${
+              className={`group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-2xl animate-on-scroll delay-100 flex flex-col h-full ${
                 isVisible['project-2'] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               }`}
             >
@@ -271,27 +273,29 @@ const Home = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
-              <div className="p-6">
+              <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-purple-600 transition-colors">
                   {t('project_2_title')}
                 </h3>
-                <p className="text-gray-600 mb-6 line-clamp-3">
+                <p className="text-gray-600 mb-6 flex-grow">
                   {t('project_2_description')}
                 </p>
-                <Link 
-                  to="/projects/cripto"
-                  className="inline-flex items-center px-6 py-3 bg-purple-600 text-white font-semibold rounded-full hover:bg-purple-700 transform hover:scale-105 transition-all duration-300"
-                >
-                  <FontAwesomeIcon icon={faBookOpen} className="mr-2" />
-                  {t('button_learn_more')}
-                </Link>
+                <div className="mt-auto">
+                  <Link 
+                    to="/projects/cripto"
+                    className="inline-flex items-center px-6 py-3 bg-purple-600 text-white font-semibold rounded-full hover:bg-purple-700 transform hover:scale-105 transition-all duration-300"
+                  >
+                    <FontAwesomeIcon icon={faBookOpen} className="mr-2" />
+                    {t('button_learn_more')}
+                  </Link>
+                </div>
               </div>
             </div>
 
             {/* Project 3 - FreeBitcoin */}
             <div 
               id="project-3"
-              className={`group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-2xl animate-on-scroll delay-200 ${
+              className={`group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-2xl animate-on-scroll delay-200 flex flex-col h-full ${
                 isVisible['project-3'] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               }`}
             >
@@ -303,20 +307,22 @@ const Home = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
-              <div className="p-6">
+              <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-green-600 transition-colors">
                   {t('project_3_title')}
                 </h3>
-                <p className="text-gray-600 mb-6 line-clamp-3">
+                <p className="text-gray-600 mb-6 flex-grow">
                   {t('project_3_description')}
                 </p>
-                <Link 
-                  to="/projects/freebitcoin"
-                  className="inline-flex items-center px-6 py-3 bg-green-600 text-white font-semibold rounded-full hover:bg-green-700 transform hover:scale-105 transition-all duration-300"
-                >
-                  <FontAwesomeIcon icon={faBookOpen} className="mr-2" />
-                  {t('button_learn_more')}
-                </Link>
+                <div className="mt-auto">
+                  <Link 
+                    to="/projects/freebitcoin"
+                    className="inline-flex items-center px-6 py-3 bg-green-600 text-white font-semibold rounded-full hover:bg-green-700 transform hover:scale-105 transition-all duration-300"
+                  >
+                    <FontAwesomeIcon icon={faBookOpen} className="mr-2" />
+                    {t('button_learn_more')}
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
