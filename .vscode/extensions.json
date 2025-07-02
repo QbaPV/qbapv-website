@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+    "dsznajder.es7-react-js-snippets",
+    "formulahendry.auto-rename-tag",
+    "esbenp.prettier-vscode",
+    "bradlc.vscode-tailwindcss",
+    "eamodio.gitlens",
+    "ritwickdey.LiveServer",
+    "xabikos.JavaScriptSnippets",
+    "christian-kohler.path-intellisense",
+    "oderwat.indent-rainbow",
+    "ms-vscode.vscode-typescript-next",
+    "ms-vscode.vscode-json",
+    "ms-vscode.vscode-eslint"
+  ]
+}

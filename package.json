@@ -7,7 +7,7 @@
   "scripts": {
     "start": "webpack serve --mode development",
     "build": "webpack --mode production",
-    "build:dev": "webpack --mode development", 
+    "build:dev": "webpack --mode development",
     "build:css": "postcss src/styles/tailwind.css -o src/styles/output.css --watch",
     "server": "node server.js",
     "server:dev": "NODE_ENV=development node server.js",

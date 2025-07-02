@@ -1,9 +1,12 @@
-// src/pages/Blog.js - VERSIÓN CORREGIDA
+// src/pages/Blog.js - VERSIÓN CON JSON CENTRALIZADO
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
-// Importar imágenes existentes
+// Importar datos del JSON centralizado
+import blogData from '../data/blogPosts.json';
+
+// Importar imágenes existentes como fallback
 import forexImg from '../assets/images/forex-home.jpg';
 import criptoImg from '../assets/images/cripto-home.jpg';
 import freebitcoinImg from '../assets/images/freebitcoin-home.jpg';
@@ -18,175 +21,67 @@ const Blog = () => {
   
   const postsPerPage = 6;
 
-  // Datos de ejemplo para el blog
-  const blogPosts = [
-    {
-      id: 1,
-      title: {
-        es: 'Estrategias Avanzadas de Trading para 2025',
-        en: 'Advanced Trading Strategies for 2025',
-        pt: 'Estratégias Avançadas de Trading para 2025',
-        fr: 'Stratégies de Trading Avancées pour 2025',
-        de: 'Fortgeschrittene Trading-Strategien für 2025',
-        it: 'Strategie di Trading Avanzate per il 2025'
-      },
-      excerpt: {
-        es: 'Descubre las técnicas más efectivas para maximizar tus ganancias en el mercado financiero actual.',
-        en: 'Discover the most effective techniques to maximize your profits in the current financial market.',
-        pt: 'Descubra as técnicas mais eficazes para maximizar seus lucros no mercado financeiro atual.',
-        fr: 'Découvrez les techniques les plus efficaces pour maximiser vos profits sur le marché financier actuel.',
-        de: 'Entdecken Sie die effektivsten Techniken, um Ihre Gewinne auf dem aktuellen Finanzmarkt zu maximieren.',
-        it: 'Scopri le tecniche più efficaci per massimizzare i tuoi profitti nel mercato finanziario attuale.'
-      },
-      category: 'trading',
-      author: 'QbaPV Team',
-      date: '2025-06-25',
-      readTime: '8 min',
-      views: 1247,
-      image: forexImg,
-      tags: ['trading', 'estrategias', 'finanzas']
-    },
-    {
-      id: 2,
-      title: {
-        es: 'El Futuro de las Criptomonedas en 2025',
-        en: 'The Future of Cryptocurrencies in 2025',
-        pt: 'O Futuro das Criptomoedas em 2025',
-        fr: 'L\'Avenir des Cryptomonnaies en 2025',
-        de: 'Die Zukunft der Kryptowährungen in 2025',
-        it: 'Il Futuro delle Criptovalute nel 2025'
-      },
-      excerpt: {
-        es: 'Análisis profundo de las tendencias cripto y las oportunidades de inversión emergentes.',
-        en: 'Deep analysis of crypto trends and emerging investment opportunities.',
-        pt: 'Análise profunda das tendências cripto e oportunidades de investimento emergentes.',
-        fr: 'Analyse approfondie des tendances crypto et des opportunités d\'investissement émergentes.',
-        de: 'Tiefgreifende Analyse von Krypto-Trends und aufkommenden Investitionsmöglichkeiten.',
-        it: 'Analisi approfondita delle tendenze crypto e delle opportunità di investimento emergenti.'
-      },
-      category: 'crypto',
-      author: 'QbaPV Team',
-      date: '2025-06-24',
-      readTime: '12 min',
-      views: 2156,
-      image: criptoImg,
-      tags: ['crypto', 'bitcoin', 'inversión']
-    },
-    {
-      id: 3,
-      title: {
-        es: 'Inversiones Pasivas: Construye Riqueza Mientras Duermes',
-        en: 'Passive Investments: Build Wealth While You Sleep',
-        pt: 'Investimentos Passivos: Construa Riqueza Enquanto Dorme',
-        fr: 'Investissements Passifs: Construisez de la Richesse Pendant Votre Sommeil',
-        de: 'Passive Investitionen: Bauen Sie Vermögen auf, während Sie schlafen',
-        it: 'Investimenti Passivi: Costruisci Ricchezza Mentre Dormi'
-      },
-      excerpt: {
-        es: 'Aprende cómo generar ingresos pasivos consistentes con estrategias probadas y de bajo riesgo.',
-        en: 'Learn how to generate consistent passive income with proven, low-risk strategies.',
-        pt: 'Aprenda como gerar renda passiva consistente com estratégias comprovadas e de baixo risco.',
-        fr: 'Apprenez à générer des revenus passifs cohérents avec des stratégies éprouvées et à faible risque.',
-        de: 'Lernen Sie, wie Sie mit bewährten, risikoarmen Strategien konsistente passive Einkommen generieren.',
-        it: 'Impara come generare reddito passivo consistente con strategie provate e a basso rischio.'
-      },
-      category: 'investment',
-      author: 'QbaPV Team',
-      date: '2025-06-23',
-      readTime: '10 min',
-      views: 1876,
-      image: freebitcoinImg,
-      tags: ['pasivo', 'inversión', 'riqueza']
-    },
-    {
-      id: 4,
-      title: {
-        es: 'Análisis del Mercado: Tendencias Q3 2025',
-        en: 'Market Analysis: Q3 2025 Trends',
-        pt: 'Análise do Mercado: Tendências Q3 2025',
-        fr: 'Analyse du Marché: Tendances Q3 2025',
-        de: 'Marktanalyse: Q3 2025 Trends',
-        it: 'Analisi del Mercato: Tendenze Q3 2025'
-      },
-      excerpt: {
-        es: 'Un vistazo detallado a los movimientos del mercado y las oportunidades para el tercer trimestre.',
-        en: 'A detailed look at market movements and opportunities for the third quarter.',
-        pt: 'Um olhar detalhado sobre os movimentos do mercado e oportunidades para o terceiro trimestre.',
-        fr: 'Un regard détaillé sur les mouvements du marché et les opportunités pour le troisième trimestre.',
-        de: 'Ein detaillierter Blick auf Marktbewegungen und Chancen für das dritte Quartal.',
-        it: 'Uno sguardo dettagliato ai movimenti del mercato e alle opportunità per il terzo trimestre.'
-      },
-      category: 'analysis',
-      author: 'QbaPV Team',
-      date: '2025-06-22',
-      readTime: '15 min',
-      views: 3245,
-      image: forexImg,
-      tags: ['análisis', 'mercado', 'tendencias']
-    },
-    {
-      id: 5,
-      title: {
-        es: 'Gestión de Riesgo en Inversiones de Alto Rendimiento',
-        en: 'Risk Management in High-Yield Investments',
-        pt: 'Gestão de Risco em Investimentos de Alto Rendimento',
-        fr: 'Gestion des Risques dans les Investissements à Haut Rendement',
-        de: 'Risikomanagement bei hochrentablen Investitionen',
-        it: 'Gestione del Rischio negli Investimenti ad Alto Rendimento'
-      },
-      excerpt: {
-        es: 'Estrategias esenciales para proteger tu capital mientras buscas rendimientos superiores.',
-        en: 'Essential strategies to protect your capital while seeking superior returns.',
-        pt: 'Estratégias essenciais para proteger seu capital enquanto busca retornos superiores.',
-        fr: 'Stratégies essentielles pour protéger votre capital tout en recherchant des rendements supérieurs.',
-        de: 'Wesentliche Strategien zum Schutz Ihres Kapitals bei der Suche nach höheren Renditen.',
-        it: 'Strategie essenziali per proteggere il tuo capitale mentre cerchi rendimenti superiori.'
-      },
-      category: 'education',
-      author: 'QbaPV Team',
-      date: '2025-06-21',
-      readTime: '11 min',
-      views: 1654,
-      image: criptoImg,
-      tags: ['riesgo', 'gestión', 'educación']
-    },
-    {
-      id: 6,
-      title: {
-        es: 'Tecnología Blockchain: Más Allá de las Criptomonedas',
-        en: 'Blockchain Technology: Beyond Cryptocurrencies',
-        pt: 'Tecnologia Blockchain: Além das Criptomoedas',
-        fr: 'Technologie Blockchain: Au-delà des Cryptomonnaies',
-        de: 'Blockchain-Technologie: Jenseits von Kryptowährungen',
-        it: 'Tecnologia Blockchain: Oltre le Criptovalute'
-      },
-      excerpt: {
-        es: 'Explora las aplicaciones revolucionarias de blockchain en diversos sectores e industrias.',
-        en: 'Explore the revolutionary applications of blockchain across various sectors and industries.',
-        pt: 'Explore as aplicações revolucionárias do blockchain em vários setores e indústrias.',
-        fr: 'Explorez les applications révolutionnaires de la blockchain dans divers secteurs et industries.',
-        de: 'Erkunden Sie die revolutionären Anwendungen von Blockchain in verschiedenen Sektoren und Industrien.',
-        it: 'Esplora le applicazioni rivoluzionarie della blockchain in vari settori e industrie.'
-      },
-      category: 'technology',
-      author: 'QbaPV Team',
-      date: '2025-06-20',
-      readTime: '9 min',
-      views: 987,
-      image: freebitcoinImg,
-      tags: ['blockchain', 'tecnología', 'innovación']
-    }
-  ];
+  // Usar datos del JSON y mapear imágenes
+  const blogPosts = blogData.posts.map(post => ({
+    ...post,
+    // Mapear imágenes locales basándose en categoría
+    image: post.category === 'Trading' ? forexImg :
+           post.category === 'Criptomonedas' ? criptoImg :
+           post.category === 'Blockchain' ? freebitcoinImg :
+           post.category === 'Análisis' ? forexImg :
+           post.category === 'Gestión' ? criptoImg :
+           post.category === 'Psicología' ? freebitcoinImg :
+           forexImg, // fallback
+    // Adaptar estructura de datos
+    title: post.title,
+    excerpt: post.excerpt,
+    category: post.category.toLowerCase(),
+    readTime: `${post.readTime} min`,
+    tags: post.tags
+  }));
 
-  // Categorías simplificadas
+  // Mapear categorías del JSON
+  const categoriesFromJSON = blogData.categories.map(cat => ({
+    id: cat.toLowerCase(),
+    name: {
+      es: cat,
+      en: cat === 'Criptomonedas' ? 'Cryptocurrencies' :
+          cat === 'Análisis' ? 'Analysis' :
+          cat === 'Gestión' ? 'Management' :
+          cat === 'Psicología' ? 'Psychology' :
+          cat === 'Blockchain' ? 'Blockchain' :
+          cat,
+      pt: cat === 'Criptomonedas' ? 'Criptomoedas' :
+          cat === 'Análisis' ? 'Análise' :
+          cat === 'Gestión' ? 'Gestão' :
+          cat === 'Psicología' ? 'Psicologia' :
+          cat === 'Blockchain' ? 'Blockchain' :
+          cat,
+      fr: cat === 'Criptomonedas' ? 'Cryptomonnaies' :
+          cat === 'Análisis' ? 'Analyse' :
+          cat === 'Gestión' ? 'Gestion' :
+          cat === 'Psicología' ? 'Psychologie' :
+          cat === 'Blockchain' ? 'Blockchain' :
+          cat,
+      de: cat === 'Criptomonedas' ? 'Kryptowährungen' :
+          cat === 'Análisis' ? 'Analyse' :
+          cat === 'Gestión' ? 'Management' :
+          cat === 'Psicología' ? 'Psychologie' :
+          cat === 'Blockchain' ? 'Blockchain' :
+          cat,
+      it: cat === 'Criptomonedas' ? 'Criptovalute' :
+          cat === 'Análisis' ? 'Analisi' :
+          cat === 'Gestión' ? 'Gestione' :
+          cat === 'Psicología' ? 'Psicologia' :
+          cat === 'Blockchain' ? 'Blockchain' :
+          cat
+    }
+  }));
+
+  // Categorías con "Todos" al inicio
   const categories = [
     { id: 'all', name: { es: 'Todos', en: 'All', pt: 'Todos', fr: 'Tous', de: 'Alle', it: 'Tutti' } },
-    { id: 'trading', name: { es: 'Trading', en: 'Trading', pt: 'Trading', fr: 'Trading', de: 'Trading', it: 'Trading' } },
-    { id: 'crypto', name: { es: 'Cripto', en: 'Crypto', pt: 'Cripto', fr: 'Crypto', de: 'Krypto', it: 'Cripto' } },
-    { id: 'investment', name: { es: 'Inversión', en: 'Investment', pt: 'Investimento', fr: 'Investissement', de: 'Investition', it: 'Investimento' } },
-    { id: 'analysis', name: { es: 'Análisis', en: 'Analysis', pt: 'Análise', fr: 'Analyse', de: 'Analyse', it: 'Analisi' } },
-    { id: 'education', name: { es: 'Educación', en: 'Education', pt: 'Educação', fr: 'Éducation', de: 'Bildung', it: 'Educazione' } },
-    { id: 'technology', name: { es: 'Tecnología', en: 'Technology', pt: 'Tecnologia', fr: 'Technologie', de: 'Technologie', it: 'Tecnologia' } }
+    ...categoriesFromJSON
   ];
 
   // Filtrar posts
