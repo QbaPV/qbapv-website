@@ -1,4 +1,4 @@
-// src/components/Navbar.js - VERSIÓN OPTIMIZADA
+// src/components/Navbar.js - VERSIÓN CON GOOGLE ANALYTICS
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -6,6 +6,7 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 import LanguageSelector from './LanguageSelector';
 import logoNavbarEn from '../assets/logos/logo-navbar-en.png';
 import logoNavbarEs from '../assets/logos/logo-navbar-es.png';
+import { GAEvents } from '../config/analytics';
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
@@ -47,6 +48,11 @@ const Navbar = () => {
 
   const isActiveLink = (path) => location.pathname === path;
 
+  // Función para manejar clicks en el menú con tracking
+  const handleMenuClick = (menuItem) => {
+    GAEvents.clickMenu(menuItem);
+  };
+
   return (
     <nav 
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
@@ -60,7 +66,11 @@ const Navbar = () => {
           
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link to="/" className="flex items-center">
+            <Link 
+              to="/" 
+              className="flex items-center"
+              onClick={() => handleMenuClick('logo')}
+            >
               <img 
                 src={logoNavbar} 
                 alt="QBAPV Logo" 
@@ -81,6 +91,7 @@ const Navbar = () => {
                         ? 'text-yellow-400 border-b-2 border-yellow-400'
                         : 'text-yellow-600 hover:text-yellow-300'
                     }`}
+                    onClick={() => handleMenuClick(item.key)}
                   >
                     {t(item.key)}
                   </Link>
@@ -121,6 +132,7 @@ const Navbar = () => {
                     ? 'text-yellow-400 bg-gray-800'
                     : 'text-yellow-600 hover:text-yellow-300 hover:bg-gray-800'
                 }`}
+                onClick={() => handleMenuClick(item.key)}
               >
                 {t(item.key)}
               </Link>

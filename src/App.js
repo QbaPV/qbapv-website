@@ -1,6 +1,6 @@
-// src/App.js - VERSIÓN CORREGIDA
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+// src/App.js - VERSIÓN CON GOOGLE ANALYTICS 4
+import React, { useEffect } from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -15,7 +15,25 @@ import Register from './pages/Register';
 import BlogPost from './pages/BlogPost';
 import AdminEmail from './pages/AdminEmail';
 
+// Importar Google Analytics
+import { initGA, pageview } from './config/analytics';
+
 const App = () => {
+  const location = useLocation();
+
+  // Inicializar Google Analytics cuando la app carga
+  useEffect(() => {
+    const gaInitialized = initGA();
+    if (gaInitialized) {
+      console.log('✅ Google Analytics inicializado correctamente');
+    }
+  }, []);
+
+  // Trackear cambios de página
+  useEffect(() => {
+    pageview(location.pathname + location.search);
+  }, [location]);
+
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />

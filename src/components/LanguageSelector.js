@@ -1,7 +1,8 @@
-// src/components/LanguageSelector.js - VERSIÓN FINAL CORREGIDA CON TRADUCCIONES
+// src/components/LanguageSelector.js - VERSIÓN CON GOOGLE ANALYTICS
 import React, { useState, useRef, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { FaChevronDown, FaGlobe } from 'react-icons/fa';
+import { GAEvents } from '../config/analytics';
 import spainFlag from '../assets/flags/spain-flag.png';
 import usaFlag from '../assets/flags/usa-flag.png';
 import brazilFlag from '../assets/flags/brazil-flag.svg';
@@ -91,6 +92,9 @@ const LanguageSelector = () => {
     if (langCode !== i18n.language) {
       i18n.changeLanguage(langCode);
       localStorage.setItem('language', langCode);
+      
+      // Trackear cambio de idioma en Google Analytics
+      GAEvents.changeLanguage(langCode);
       
       // Disparar evento personalizado para notificar el cambio
       window.dispatchEvent(new CustomEvent('languageChanged', { 

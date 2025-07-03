@@ -16,6 +16,7 @@ import {
 import { v4 as uuidv4 } from 'uuid';
 import empresaContact from '../assets/images/empresa-contact.jpg';
 import SubmitButton from '../components/SubmitButton';
+import { GAEvents } from '../config/analytics';
 
 const Contact = () => {
   const { t } = useTranslation();
@@ -200,6 +201,10 @@ const Contact = () => {
         await new Promise(resolve => setTimeout(resolve, 1500));
         
         toast.success(t('message_success'));
+        
+        // Trackear envío exitoso en Google Analytics
+        GAEvents.submitContactForm('contact');
+        
         setSubmitted(true);
         setFormData({
           name: '',
@@ -227,6 +232,10 @@ const Contact = () => {
 
         if (response.ok) {
           toast.success(t('message_success'));
+          
+          // Trackear envío exitoso en Google Analytics
+          GAEvents.submitContactForm('contact');
+          
           setSubmitted(true);
           setFormData({
             name: '',
@@ -243,6 +252,9 @@ const Contact = () => {
     } catch (error) {
       console.error('Error:', error);
       toast.error('Error al enviar el mensaje. Por favor intenta nuevamente.');
+      
+      // Trackear error en Google Analytics
+      GAEvents.formError('contact', error.message || 'submission_error');
     } finally {
       setIsSubmitting(false);
     }
