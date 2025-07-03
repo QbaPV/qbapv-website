@@ -1,4 +1,4 @@
-// src/pages/Contact.js - VERSIÓN MODERNA Y OPTIMIZADA
+// src/pages/Contact.js - VERSIÓN MODERNA Y OPTIMIZADA + SEO
 import React, { useState, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { toast } from 'react-toastify';
@@ -17,6 +17,7 @@ import { v4 as uuidv4 } from 'uuid';
 import empresaContact from '../assets/images/empresa-contact.jpg';
 import SubmitButton from '../components/SubmitButton';
 import { GAEvents } from '../config/analytics';
+import SEOHead from '../components/SEOHead';
 
 const Contact = () => {
   const { t } = useTranslation();
@@ -286,6 +287,10 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
+      <SEOHead 
+        page="contact"
+        path="/contact"
+      />
       {/* Hero Section */}
       <section className="relative py-20 overflow-hidden bg-gradient-to-br from-blue-600 to-purple-700">
         <div className="absolute inset-0 bg-black opacity-20"></div>

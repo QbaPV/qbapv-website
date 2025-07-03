@@ -1,7 +1,8 @@
-// src/pages/Register.js - VERSIÓN COMPLETA
+// src/pages/Register.js - VERSIÓN COMPLETA + SEO
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import SEOHead from '../components/SEOHead';
 
 const Register = () => {
   const { t, i18n } = useTranslation();
@@ -185,6 +186,10 @@ const Register = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <SEOHead 
+        page="register"
+        path="/register"
+      />
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-br from-indigo-600 to-purple-700 overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-20"></div>

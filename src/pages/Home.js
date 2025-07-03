@@ -1,4 +1,4 @@
-// src/pages/Home.js - VERSIÓN OPTIMIZADA
+// src/pages/Home.js - VERSIÓN OPTIMIZADA CON SEO
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -11,6 +11,7 @@ import {
   faAward,
   faGlobe
 } from '@fortawesome/free-solid-svg-icons';
+import SEOHead from '../components/SEOHead';
 
 // Importar imágenes
 import forexHome from '../assets/images/forex-home.jpg';
@@ -102,6 +103,10 @@ const Home = () => {
 
   return (
     <div className="bg-gray-50">
+      <SEOHead 
+        page="home"
+        path="/"
+      />
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
         {/* Animated Background */}

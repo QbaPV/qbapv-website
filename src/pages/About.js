@@ -1,4 +1,4 @@
-// src/pages/About.js - VERSIÓN CORREGIDA CON ESTÉTICA CONSISTENTE
+// src/pages/About.js - VERSIÓN CORREGIDA CON ESTÉTICA CONSISTENTE + SEO
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -15,6 +15,7 @@ import {
   FaClock,
   FaAward
 } from 'react-icons/fa';
+import SEOHead from '../components/SEOHead';
 
 // Componentes
 import Timeline from '../components/Timeline';
@@ -76,6 +77,10 @@ const About = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
+      <SEOHead 
+        page="about"
+        path="/about"
+      />
       {/* Hero Section Mejorada */}
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-purple-700 opacity-90"></div>

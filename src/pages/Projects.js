@@ -1,4 +1,4 @@
-// src/pages/Projects.js - VERSIÓN MODERNA
+// src/pages/Projects.js - VERSIÓN MODERNA + SEO
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -16,6 +16,7 @@ import {
   FaShieldAlt,
   FaTrophy
 } from 'react-icons/fa';
+import SEOHead from '../components/SEOHead';
 
 // Importar imágenes
 import forexImg from '../assets/images/forex-home.jpg';
@@ -168,6 +169,10 @@ const Projects = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <SEOHead 
+        page="projects"
+        path="/projects"
+      />
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-br from-blue-600 to-purple-700 overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-20"></div>

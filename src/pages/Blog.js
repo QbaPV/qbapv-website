@@ -1,7 +1,8 @@
-// src/pages/Blog.js - VERSIÓN CON JSON CENTRALIZADO
+// src/pages/Blog.js - VERSIÓN CON JSON CENTRALIZADO + SEO
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import SEOHead from '../components/SEOHead';
 
 // Importar datos del JSON centralizado
 import blogData from '../data/blogPosts.json';
@@ -104,6 +105,10 @@ const Blog = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <SEOHead 
+        page="blog"
+        path="/blog"
+      />
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-br from-purple-600 to-blue-700 overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-20"></div>
