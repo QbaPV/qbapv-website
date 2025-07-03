@@ -11,7 +11,7 @@ import {
   faAward,
   faGlobe
 } from '@fortawesome/free-solid-svg-icons';
-import SEOHead from '../components/SEOHead';
+import SEOHead from '../components/SEOHead_Simple';
 
 // Importar imágenes
 import forexHome from '../assets/images/forex-home.jpg';
