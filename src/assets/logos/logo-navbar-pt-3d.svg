@@ -1,0 +1,88 @@
+<svg width="200" height="80" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- Definir gradientes para efecto 3D con colores más intensos -->
+  <defs>
+    <!-- Gradiente para Q (Rojo más intenso y vivo) -->
+    <linearGradient id="gradientQ" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff2d2d;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#e11d48;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#dc2626;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Gradiente para b (Gris más oscuro) -->
+    <linearGradient id="gradientB" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6b7280;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#4b5563;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#374151;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Gradiente para a (Azul celeste mantenido) -->
+    <linearGradient id="gradientA" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#60a5fa;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#38bdf8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0ea5e9;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Gradiente para P (Verde más intenso y vivo) -->
+    <linearGradient id="gradientP" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#22c55e;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#16a34a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#15803d;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Gradiente para V (Gris más oscuro) -->
+    <linearGradient id="gradientV" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6b7280;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#4b5563;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#374151;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Gradiente para tagline (Amarillo mantenido) -->
+    <linearGradient id="gradientYellow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fde047;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Filtro de sombra para efecto 3D -->
+    <filter id="dropshadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="3" stdDeviation="1.5" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+    
+    <!-- Filtro de sombra para tagline -->
+    <filter id="dropshadowSmall" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="1" dy="2" stdDeviation="0.8" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  
+  <!-- Sombras de fondo para mayor profundidad 3D - CENTRADAS -->
+  <g font-family="Arial, sans-serif" font-size="42" font-weight="bold" text-anchor="middle" opacity="0.2">
+    <text x="50" y="45" fill="#000000">Q</text>
+    <text x="78" y="45" fill="#000000">b</text>
+    <text x="100" y="45" fill="#000000">a</text>
+    <text x="125" y="45" fill="#000000">P</text>
+    <text x="150" y="45" fill="#000000">V</text>
+  </g>
+  
+  <!-- QbaPV Text principal con gradientes y espaciado mejorado - CENTRADO -->
+  <g font-family="Arial, sans-serif" font-size="40" font-weight="bold" text-anchor="middle" filter="url(#dropshadow)">
+    <text x="47" y="42" fill="url(#gradientQ)" stroke="#dc2626" stroke-width="0.5">Q</text>
+    <text x="75" y="42" fill="url(#gradientB)" stroke="#374151" stroke-width="0.5">b</text>
+    <text x="97" y="42" fill="url(#gradientA)" stroke="#0ea5e9" stroke-width="0.5">a</text>
+    <text x="122" y="42" fill="url(#gradientP)" stroke="#15803d" stroke-width="0.5">P</text>
+    <text x="147" y="42" fill="url(#gradientV)" stroke="#374151" stroke-width="0.5">V</text>
+  </g>
+  
+  <!-- Highlights para efecto más 3D - CENTRADOS -->
+  <g font-family="Arial, sans-serif" font-size="40" font-weight="bold" text-anchor="middle" opacity="0.4">
+    <text x="47" y="40" fill="#ffffff" stroke="none" font-size="38">Q</text>
+    <text x="75" y="40" fill="#ffffff" stroke="none" font-size="38">b</text>
+    <text x="97" y="40" fill="#ffffff" stroke="none" font-size="38">a</text>
+    <text x="122" y="40" fill="#ffffff" stroke="none" font-size="38">P</text>
+    <text x="147" y="40" fill="#ffffff" stroke="none" font-size="38">V</text>
+  </g>
+  
+  <!-- Tagline "Sem Compromisso!" con efecto 3D - CENTRADO -->
+  <text x="100" y="63" font-family="Arial, sans-serif" font-size="14" font-weight="600" 
+        text-anchor="middle" fill="url(#gradientYellow)" filter="url(#dropshadowSmall)"
+        stroke="#f59e0b" stroke-width="0.3">Sem Compromisso!</text>
+</svg>
