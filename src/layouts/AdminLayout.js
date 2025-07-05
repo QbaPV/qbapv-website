@@ -37,6 +37,14 @@ const AdminLayout = ({ children }) => {
       color: 'text-blue-600 dark:text-blue-400'
     },
     { 
+      name: 'Contenido', 
+      href: '/admin/content', 
+      icon: Edit, 
+      current: activeRoute.startsWith('/admin/content'),
+      description: 'Gestión CRUD completa',
+      color: 'text-green-600 dark:text-green-400'
+    },
+    { 
       name: 'Proyectos', 
       href: '/admin/projects', 
       icon: Edit, 

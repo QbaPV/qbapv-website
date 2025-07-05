@@ -21,6 +21,12 @@ import AdminLogin from './pages/admin/Login';
 import AdminDashboard from './pages/admin/Dashboard';
 import AdminLayout from './layouts/AdminLayout';
 
+// Importar gestión de contenido DÍA 3
+import ContentManagement from './pages/admin/content/ContentManagement';
+import ProjectsEditor from './pages/admin/content/ProjectsEditor';
+import BlogEditor from './pages/admin/content/BlogEditor';
+import MediaManager from './pages/admin/content/MediaManager';
+
 // Importar Google Analytics
 import { initGA, pageview } from './config/analytics';
 
@@ -74,25 +80,55 @@ const App = () => {
                 </ProtectedRoute>
               } 
             />
+            
+            {/* Rutas de Gestión de Contenido DÍA 3 */}
+            <Route 
+              path="/admin/content" 
+              element={
+                <ProtectedRoute>
+                  <AdminLayout>
+                    <ContentManagement />
+                  </AdminLayout>
+                </ProtectedRoute>
+              } 
+            />
+            <Route 
+              path="/admin/content/projects/edit/:id" 
+              element={
+                <ProtectedRoute>
+                  <AdminLayout>
+                    <ProjectsEditor />
+                  </AdminLayout>
+                </ProtectedRoute>
+              } 
+            />
+            <Route 
+              path="/admin/content/blog/edit/:id" 
+              element={
+                <ProtectedRoute>
+                  <AdminLayout>
+                    <BlogEditor />
+                  </AdminLayout>
+                </ProtectedRoute>
+              } 
+            />
+            <Route 
+              path="/admin/content/media" 
+              element={
+                <ProtectedRoute>
+                  <AdminLayout>
+                    <MediaManager />
+                  </AdminLayout>
+                </ProtectedRoute>
+              } 
+            />
             {/* Rutas específicas del admin */}
             <Route 
               path="/admin/projects" 
               element={
                 <ProtectedRoute>
                   <AdminLayout>
-                    <div className="text-center py-12">
-                      <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                        📁 Gestión de Proyectos
-                      </h2>
-                      <p className="text-gray-600 dark:text-gray-400 mb-6">
-                        Aquí podrás gestionar todos los proyectos del portfolio.
-                      </p>
-                      <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4">
-                        <p className="text-blue-800 dark:text-blue-200 text-sm">
-                          🚀 DÍA 2: Editor CRUD completo para proyectos
-                        </p>
-                      </div>
-                    </div>
+                    <ContentManagement />
                   </AdminLayout>
                 </ProtectedRoute>
               } 
@@ -102,19 +138,7 @@ const App = () => {
               element={
                 <ProtectedRoute>
                   <AdminLayout>
-                    <div className="text-center py-12">
-                      <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                        ✍️ Editor de Blog
-                      </h2>
-                      <p className="text-gray-600 dark:text-gray-400 mb-6">
-                        Editor avanzado para artículos del blog.
-                      </p>
-                      <div className="bg-green-50 dark:bg-green-900/20 rounded-lg p-4">
-                        <p className="text-green-800 dark:text-green-200 text-sm">
-                          🚀 DÍA 2: Editor WYSIWYG estilo Medium
-                        </p>
-                      </div>
-                    </div>
+                    <ContentManagement />
                   </AdminLayout>
                 </ProtectedRoute>
               } 
@@ -171,19 +195,7 @@ const App = () => {
               element={
                 <ProtectedRoute>
                   <AdminLayout>
-                    <div className="text-center py-12">
-                      <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                        🖼️ Gestión de Media
-                      </h2>
-                      <p className="text-gray-600 dark:text-gray-400 mb-6">
-                        Administrar imágenes y archivos multimedia.
-                      </p>
-                      <div className="bg-indigo-50 dark:bg-indigo-900/20 rounded-lg p-4">
-                        <p className="text-indigo-800 dark:text-indigo-200 text-sm">
-                          🚀 DÍA 2: Upload, organización y optimización de imágenes
-                        </p>
-                      </div>
-                    </div>
+                    <MediaManager />
                   </AdminLayout>
                 </ProtectedRoute>
               } 
